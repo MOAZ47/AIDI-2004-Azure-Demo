@@ -32,8 +32,8 @@ The project was constructed using Azure Machine Learning following these key ste
 The trained model was deployed as a web service using Azure App Service. The deployment process involved:
 
 1. Web App Creation: An Azure App Service web app was created to host the model.
-Deployment Configuration: The deployment workflow was configured to automatically deploy the model to the web app upon code changes.
-2. Model Endpoint: A REST API endpoint was exposed to allow users to submit flower measurements and receive predictions.
+2. Deployment Configuration: The deployment workflow was configured to automatically deploy the model to the web app upon code changes.
+3. Model Endpoint: A REST API endpoint was exposed to allow users to submit flower measurements and receive predictions.
 
 ### Maintenance
 1. Model Retraining: The model can be periodically retrained with new data to improve accuracy.
