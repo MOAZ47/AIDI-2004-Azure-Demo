@@ -20,7 +20,7 @@ It utilizes Python and the Azure ML SDK for training, deployment, and web app in
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/<your-username>/<your-repository-name>.git
+   git clone https://github.com/MOAZ47/Azure-ML-Iris-Flower-Classification.git
    ```
 2. **Set Up Azure Credentials:**
    - Follow the Azure ML documentation to set up your Azure environment and obtain necessary credentials.
