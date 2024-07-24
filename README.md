@@ -5,7 +5,7 @@
 This project leverages Azure Machine Learning to build and deploy a machine learning model for classifying flower species based on the Iris dataset. 
 It utilizes Python and the Azure ML SDK for training, deployment, and web app integration. This was part of hand-on-training of the AIDI-2004 program
 
-## **Key Features:**
+## **Project Structure:**
 
 * Machine Learning Model: Trains a model (classifier1.pkl) using Azure ML to predict flower types based on sepal and petal measurements (features in the Iris dataset).
 * Deployment: Deploys the trained model as a web service on Azure.
