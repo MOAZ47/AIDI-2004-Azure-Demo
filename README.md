@@ -7,9 +7,10 @@ It utilizes Python and the Azure ML SDK for training, deployment, and web app in
 
 ## **Project Structure:**
 
-* Machine Learning Model: Trains a model (classifier1.pkl) using Azure ML to predict flower types based on sepal and petal measurements (features in the Iris dataset).
-* Deployment: Deploys the trained model as a web service on Azure.
-* Web App Integration: Integrates the deployed model into a web application.
+* **.github/workflows**: Contains the configuration for Azure App Service build and deployment workflow.
+* **classifier1.pkl**: Trained model pickle file will be used with Azure ML to predict flower types based on sepal and petal measurements.
+* **app.py**: Python scripts for model deployment and web service creation.
+* templates: Directory to store html file for web app.
 
 ## **Prerequisites:**
 
@@ -18,22 +19,27 @@ It utilizes Python and the Azure ML SDK for training, deployment, and web app in
 
 ## Project Steps
 
-1. Data Preparation:
+### Project Build
+The project was constructed using Azure Machine Learning following these key steps:
 
-   - Import and explore the Iris dataset.
-   - Preprocess data as necessary (e.g., handling missing values, feature scaling).
-   - Split the dataset into training and testing sets.
+1. Workspace Creation: An Azure Machine Learning workspace was established to manage the project's resources.
+2. Dataset Import: The Iris dataset was imported into the workspace.
+3. Data Preparation: The dataset was cleaned and preprocessed for model training.
+4. Model Training: A machine learning model (classifier1.pkl) was trained using an appropriate algorithm (e.g., Support Vector Machine, Random Forest, Logistic Regression).
+5. Model Evaluation: The trained model's performance was assessed using metrics like accuracy, precision, recall, and F1-score.
 
-2. Model Training:
+### Deployment
+The trained model was deployed as a web service using Azure App Service. The deployment process involved:
 
-   - Select an appropriate machine learning algorithm (e.g., Logistic Regression, Support Vector Machine, Random Forest).
-   - Train the model using the training dataset.
-   - Evaluate the model's performance using metrics like accuracy, precision, recall, and F1-score.
+1. Web App Creation: An Azure App Service web app was created to host the model.
+Deployment Configuration: The deployment workflow was configured to automatically deploy the model to the web app upon code changes.
+2. Model Endpoint: A REST API endpoint was exposed to allow users to submit flower measurements and receive predictions.
 
-3. Model Deployment:
+### Maintenance
+1. Model Retraining: The model can be periodically retrained with new data to improve accuracy.
+2. Performance Monitoring: The web service's performance should be monitored to identify any issues or bottlenecks.
+3. Security Updates: The project dependencies and Azure platform components should be kept up-to-date with the latest security patches.
 
-   - Deploy the trained model as a web service using Azure Machine Learning.
-   - Create a web app to interact with the deployed model.
 
 ## **Getting Started:**
 
